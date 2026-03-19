@@ -17,7 +17,7 @@ add_library(ripe lib/Ripe.cc)
 
 target_sources(ripe PUBLIC FILE_SET HEADERS BASE_DIRS include FILES include/Ripe.h)
 
-target_link_libraries(ripe
+target_link_libraries(ripe PRIVATE
     cryptopp::cryptopp
     cryptopp-pem::cryptopp-pem
     ZLIB::ZLIB
