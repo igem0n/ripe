@@ -10,3 +10,5 @@ int main(int argc, char** argv) {
 
     return ::testing::UnitTest::GetInstance()->Run();
 }
+
+#include "easylogging++.cc"
