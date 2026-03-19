@@ -1,7 +1,7 @@
 #ifndef RIPE_TEST_H
 #define RIPE_TEST_H
 
-#include "include/Ripe.h"
+#include <Ripe.h>
 #include "test.h"
 
 static TestData<std::string, std::string> Base64TestData = {
