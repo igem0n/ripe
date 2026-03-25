@@ -31,11 +31,11 @@ class ripe(ConanFile):
     def requirements(self):
         self.requires("cryptopp/8.2.0")
         self.requires("cryptopp-pem/8.2.0")
-        self.requires("zlib/1.3.1")
+        self.requires("zlib/[>=1.3.1]")
 
     def build_requirements(self):
-        self.test_requires("easyloggingpp/9.97.1")
-        self.test_requires("gtest/1.17.0")
+        self.test_requires("easyloggingpp/[>=9.97.1]")
+        self.test_requires("gtest/[>=1.17.0]")
         
     def generate(self):
         tc = CMakeToolchain(self)
