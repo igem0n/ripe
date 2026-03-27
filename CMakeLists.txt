@@ -8,7 +8,6 @@ set (RIPE_VERSION "4.2.2")
 set (RIPE_SOVERSION "4.2.2")
 
 find_package(ZLIB REQUIRED)
-find_package(cryptopp REQUIRED)
 find_package(cryptopp-pem REQUIRED)
 
 ################################################ RIPE LIB #####################################
@@ -18,7 +17,6 @@ add_library(ripe lib/Ripe.cc)
 target_sources(ripe PUBLIC FILE_SET HEADERS BASE_DIRS include FILES include/Ripe.h)
 
 target_link_libraries(ripe PRIVATE
-    cryptopp::cryptopp
     cryptopp-pem::cryptopp-pem
     ZLIB::ZLIB
 )
