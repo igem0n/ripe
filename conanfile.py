@@ -29,8 +29,7 @@ class ripe(ConanFile):
             self.options.rm_safe("fPIC")
         
     def requirements(self):
-        self.requires("cryptopp/8.2.0")
-        self.requires("cryptopp-pem/8.2.0")
+        self.requires("cryptopp-pem/8.9.0")
         self.requires("zlib/[>=1.3.1]")
 
     def build_requirements(self):
