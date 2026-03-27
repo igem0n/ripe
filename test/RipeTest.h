@@ -72,9 +72,9 @@ public:
     static const std::string encryptedDataFile;
 };
 
-const std::string RipeTest::publicKeyFile = "/tmp/ripe-unit-test-public-key.pem";
-const std::string RipeTest::privateKeyFile = "/tmp/ripe-unit-test-private-key.pem";
-const std::string RipeTest::encryptedDataFile = "/tmp/ripe-unit-test-rsa-encrypted.bin";
+const std::string RipeTest::publicKeyFile = "ripe-unit-test-public-key.pem";
+const std::string RipeTest::privateKeyFile = "ripe-unit-test-private-key.pem";
+const std::string RipeTest::encryptedDataFile = "ripe-unit-test-rsa-encrypted.bin";
 
 TEST(RipeTest, Base64Encode)
 {
